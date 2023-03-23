@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ss0400bj3l64"]
+
+[ext_resource type="Texture2D" uid="uid://c7fxdmtgfosdd" path="res://assets/sprites/TempBase.png" id="1_g36u5"]
+[ext_resource type="Script" path="res://assets/scripts/Base.gd" id="1_sso0s"]
+
+[node name="Base" type="Node2D"]
+script = ExtResource("1_sso0s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g36u5")
+centered = false

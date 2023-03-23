@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxbsqg6k4u2cf"]
+
+[ext_resource type="Texture2D" uid="uid://28fffbe1g2sl" path="res://assets/sprites/Bread.png" id="1_4gyr1"]
+[ext_resource type="Script" path="res://assets/scripts/bread.gd" id="2_gkfsi"]
+
+[node name="bread" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_4gyr1")
+centered = false
+script = ExtResource("2_gkfsi")

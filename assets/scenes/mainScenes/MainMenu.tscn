@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=3 uid="uid://dan50anrei7j0"]
+
+[ext_resource type="Texture2D" uid="uid://bxhhes4dlb10a" path="res://assets/sprites/ui/TempMainMenu.png" id="1_oq1ui"]
+[ext_resource type="FontFile" uid="uid://cxihurljbpuyy" path="res://assets/fonts/Pulang/Pulang.ttf" id="2_rtuqx"]
+
+[sub_resource type="Theme" id="Theme_t4cqp"]
+default_font = ExtResource("2_rtuqx")
+default_font_size = 60
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="Container" type="Control" parent="CanvasLayer"]
+layout_direction = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Container"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_oq1ui")
+
+[node name="ButtonContainer" type="HBoxContainer" parent="CanvasLayer/Container"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -87.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="YellowBase" type="Button" parent="CanvasLayer/Container/ButtonContainer"]
+modulate = Color(1, 1, 0, 1)
+layout_mode = 2
+theme = SubResource("Theme_t4cqp")
+text = "Yellow"
+
+[node name="RedBase" type="Button" parent="CanvasLayer/Container/ButtonContainer"]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 2
+theme = SubResource("Theme_t4cqp")
+text = "Red"
+
+[node name="GreenBase" type="Button" parent="CanvasLayer/Container/ButtonContainer"]
+modulate = Color(0, 1, 0.0156863, 1)
+layout_mode = 2
+theme = SubResource("Theme_t4cqp")
+text = "Green"
+
+[node name="BlueBase" type="Button" parent="CanvasLayer/Container/ButtonContainer"]
+modulate = Color(0, 0.607843, 1, 1)
+layout_mode = 2
+theme = SubResource("Theme_t4cqp")
+text = "Blue"

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cetjgbdnfyqa5"]
+
+[ext_resource type="Script" path="res://assets/scripts/SelectionCircle.gd" id="1_aj6ee"]
+[ext_resource type="Texture2D" uid="uid://dmiot0g5buki" path="res://assets/sprites/ui/UnitSelectCircle.png" id="1_hr1kv"]
+
+[node name="SelectionCircle" type="Node2D"]
+z_index = -1
+script = ExtResource("1_aj6ee")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hr1kv")
+centered = false
